@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Stylehome1.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="Buy">
+        <div class="menu">
+            <h id="Comngonquan">CƠM NGON QUÁN</h><br><br>
+            <a href="./Home1.html" class="button">Trang chủ</a><br>
+            <a href="./Home2.html" class="button">Sản phẩm</a><br>
+            <a href="./Home3.html" class="button">Tạo sản phẩm </a><br>
+            <a href="./Home4.html" class="button">Danh sách đặt</a><br>   
+            <a href="./Home6.html" class="button">Xem giỏ hàng của khách</a><br>
+        </div>
+        <div class="noidung">
+            <h2 id="tieude">Xin mời quý khách lựa chọn món</h2>
+            <div class="list"> 
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="../image/1.PHO.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Phở Hà Nội </div>
+                        <div class="des">
+                            Phở Hà Nội, đúng là phở ngon
+                        </div>
+                        <div class="price">$3</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Đặt</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="../image/2.CHA.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Chả cá</div>
+                        <div class="des">
+                           Chả cá Lã vọng, ăn vào lại muốn ăn thêm !!!
+                        </div>
+                        <div class="price">$4</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Đặt</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="../image/3.CAPHE.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Cà phê trứng</div>
+                        <div class="des">
+                            Cà phê và trứng
+                        </div>
+                        <div class="price">$5</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Đặt</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>              
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="../image/4.BANHMI.jpg"alt="re-load">
+                    </div>
+                    <div class="content">
+                        <div class="title">Bánh Mì</div>
+                        <div class="des">
+                            Bánh mì kẹp trứng 
+                        </div>
+                        <div class="price">$2</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Đặt</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="../image/5.BUNCA.jpg"alt="re-load">
+                    </div>
+                    <div class="content">
+                        <div class="title">Bún cá</div>
+                        <div class="des">
+                         Bún cá thơm ngon giá cả hợp lý bình dân 
+                        </div>
+                        <div class="price">$4</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Đặt</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="cart">
+            <h2 id="tieude">Danh sách đặt</h2>
+            <div class="listCart"></div>
+            <p id="thanhtoan" > Tổng tiền:</p>
+            <p><span></span></p>
+        </div>
+    <script src="Process.js"></script>
+</body>
+</html>
